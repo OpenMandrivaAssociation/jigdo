@@ -57,7 +57,6 @@ EOF
 mkdir %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
-Encoding=UTF-8
 Name=Jigdo
 Comment=%{Summary}
 Exec=%{name} %U
