@@ -42,17 +42,6 @@ autoconf
 rm -rf %{buildroot}
 %makeinstall_std
 
-mkdir -p %{buildroot}%{_menudir}
-cat > %{buildroot}%{_menudir}/%{name} << EOF
-?package(%{name}): \
-	command="%{name} %U" \
-	title="Jigdo" \
-	longtitle="%{Summary}" \
-	section="Internet/File Transfer" \
-	icon="%{name}.png" \
-	needs="x11" \
-	xdg="true"	
-EOF
 
 mkdir %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -90,7 +79,6 @@ rm -rf %{buildroot}
 %{_datadir}/%{name}/*
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_mandir}/man1/%{name}*
-%{_menudir}/%{name}
 %{_liconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_miconsdir}/%{name}.png
