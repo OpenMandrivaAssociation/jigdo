@@ -1,6 +1,6 @@
 %define	name	jigdo
 %define	version	0.7.3
-%define	release	%mkrel 4
+%define	release	%mkrel 5
 %define Summary	Jigsaw Download
 
 Summary:	%{Summary}
@@ -15,7 +15,7 @@ Source12:	%{name}-32.png
 Source13:	%{name}-48.png
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	GPL
-BuildRequires:	db4.5-devel w3c-libwww-devel openssl-devel mawk
+BuildRequires:	db4.6-devel w3c-libwww-devel openssl-devel mawk
 BuildRequires:	gtk2-devel gettext-devel libcurl-devel libbzip2-devel
 
 %description
