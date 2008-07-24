@@ -1,6 +1,6 @@
 %define	name	jigdo
 %define	version	0.7.3
-%define	release	%mkrel 5
+%define	release	%mkrel 7
 %define Summary	Jigsaw Download
 
 Summary:	%{Summary}
