@@ -10,12 +10,13 @@ Release:	%{release}
 Group:		Networking/File transfer
 URL:		http://atterer.net/jigdo/
 Source0:	http://atterer.net/jigdo/%{name}-%{version}.tar.bz2
+Patch0:		jigdo-0.7.3-gcc43.patch
 Source11:	%{name}-16.png
 Source12:	%{name}-32.png
 Source13:	%{name}-48.png
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	GPL
-BuildRequires:	db4.6-devel w3c-libwww-devel openssl-devel mawk
+BuildRequires:	db4.7-devel w3c-libwww-devel openssl-devel mawk
 BuildRequires:	gtk2-devel gettext-devel libcurl-devel libbzip2-devel
 
 %description
@@ -32,6 +33,7 @@ recreate the CD image.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 autoconf
