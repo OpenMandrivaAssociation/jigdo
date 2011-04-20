@@ -1,6 +1,6 @@
 %define	name	jigdo
 %define	version	0.7.3
-%define	release	%mkrel 11
+%define	release	%mkrel 12
 %define Summary	Jigsaw Download
 
 Summary:	%{Summary}
@@ -17,7 +17,7 @@ Source12:	%{name}-32.png
 Source13:	%{name}-48.png
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	GPL
-BuildRequires:	db4-devel w3c-libwww-devel openssl-devel mawk
+BuildRequires:	db-devel mawk
 BuildRequires:	gtk2-devel gettext-devel libcurl-devel libbzip2-devel
 
 %description
@@ -57,7 +57,7 @@ Icon=%{name}
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=GTK;Network;FileTransfer;X-MandrivaLinux-Internet-FileTransfer;
+Categories=GTK;Network;FileTransfer;
 EOF
 
 install -m644 %{SOURCE11} -D %{buildroot}%{_miconsdir}/%{name}.png
