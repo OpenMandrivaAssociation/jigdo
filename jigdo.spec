@@ -92,3 +92,54 @@ rm -rf %{buildroot}
 %{_miconsdir}/%{name}.png
 
 
+
+
+%changelog
+* Tue May 08 2012 Crispin Boylan <crisb@mandriva.org> 0.7.3-13
++ Revision: 797443
+- Rebuild
+
+  + Bogdano Arendartchuk <bogdano@mandriva.com>
+    - build with db5 (from fwang | 2011-04-12 11:14:51 +0200)
+
+* Mon Dec 06 2010 Oden Eriksson <oeriksson@mandriva.com> 0.7.3-11mdv2011.0
++ Revision: 612448
+- the mass rebuild of 2010.1 packages
+
+* Sat Jan 30 2010 Funda Wang <fwang@mandriva.org> 0.7.3-10mdv2010.1
++ Revision: 498578
+- build with db4.8
+
+* Thu Oct 08 2009 Tomasz Pawel Gajc <tpg@mandriva.org> 0.7.3-9mdv2010.0
++ Revision: 455870
+- rebuild for new curl SSL backend
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Tue Feb 24 2009 Emmanuel Andry <eandry@mandriva.org> 0.7.3-7mdv2009.1
++ Revision: 344540
+- fix gcc43 build with P0 from gentoo
+- switch to db4.7
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Sun Jan 13 2008 Emmanuel Andry <eandry@mandriva.org> 0.7.3-5mdv2008.1
++ Revision: 150439
+- use db4.6
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - drop old menu
+    - kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+* Tue Aug 28 2007 Thierry Vignaud <tv@mandriva.org> 0.7.3-4mdv2008.0
++ Revision: 73046
+- kill desktop-file-validate's 'warning: key "Encoding" in group "Desktop Entry" is deprecated'
+
