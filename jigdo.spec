@@ -18,7 +18,7 @@ Source13:	%{name}-48.png
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	GPL
 BuildRequires:	db-devel mawk
-BuildRequires:	gtk2-devel gettext-devel libcurl-devel libbzip2-devel
+BuildRequires:	pkgconfig(gtk+-2.0) gettext-devel libcurl-devel libbzip2-devel
 
 %description
 Jigsaw Download, or short jigdo, is an intelligent tool that can be used on the
