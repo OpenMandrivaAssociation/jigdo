@@ -1,6 +1,6 @@
 %define	name	jigdo
 %define	version	0.7.3
-%define	release	13
+%define release 	14
 %define Summary	Jigsaw Download
 
 Summary:	%{Summary}
@@ -15,7 +15,6 @@ Patch1:		jigdo-0.7.3-link.patch
 Source11:	%{name}-16.png
 Source12:	%{name}-32.png
 Source13:	%{name}-48.png
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 License:	GPL
 BuildRequires:	db-devel mawk
 BuildRequires:	pkgconfig(gtk+-2.0) gettext-devel libcurl-devel libbzip2-devel
