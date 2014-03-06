@@ -1,0 +1,12 @@
+diff -urN jigdo-0.7.3/Makefile.in jigdo-0.7.3-patched/Makefile.in
+--- jigdo-0.7.3/Makefile.in	2006-05-20 01:55:41.000000000 +1100
++++ jigdo-0.7.3-patched/Makefile.in	2014-03-06 21:10:43.065835685 +1100
+@@ -15,7 +15,7 @@
+ 
+ PACKAGE =	jigdo
+ INSTALL =	@INSTALL@
+-INSTALL_EXE =	@INSTALL@ -s
++INSTALL_EXE =	@INSTALL@
+ INSTALL_DATA =	@INSTALL@ -m 644
+ INSTALL_SCRIPT = @INSTALL@ -m 755
+ AWK =		@AWK@
