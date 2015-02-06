@@ -1,7 +1,7 @@
 Summary:	Jigsaw Download
 Name:		jigdo
 Version:	0.7.3
-Release:	15
+Release:	16
 License:	GPLv2+
 Group:		Networking/File transfer
 Url:		http://atterer.net/jigdo/
