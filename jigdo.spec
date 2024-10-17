@@ -4,7 +4,7 @@ Version:	0.7.3
 Release:	16
 License:	GPLv2+
 Group:		Networking/File transfer
-Url:		http://atterer.net/jigdo/
+Url:		https://atterer.net/jigdo/
 Source0:	http://atterer.net/jigdo/%{name}-%{version}.tar.bz2
 Patch0:		jigdo-0.7.3-gcc43.patch
 Patch1:		jigdo-0.7.3-link.patch
